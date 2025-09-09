@@ -1,18 +1,17 @@
 {
-  "name": "cyberdev",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "npx @11ty/eleventy",
-    "start": "npx @11ty/eleventy --serve",
-    "watch": "npx @11ty/eleventy --watch"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@11ty/eleventy": "^3.1.2",
-    "eleventy-plugin-date": "^1.0.0"
-  }
+    "name": "cyberdev",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.njk",
+    "scripts": {
+        "build": "npx @11ty/eleventy",
+        "start": "npx @11ty/eleventy --serve"
+    },
+    "devDependencies": {
+        "@11ty/eleventy": "^3.1.2"
+    },
+    "dependencies": {
+        "eleventy-plugin-date": "^1.0.0",
+        "markdown-it": "^14.1.0"
+    }
 }
