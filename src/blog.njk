@@ -2,3 +2,21 @@
 layout: layouts/base.njk
 title: Blog
 ---
+<div class="blog-container">
+    <h2>Blog</h2>
+    <div class="blog-grid">
+        {% for blog in collections.blog %}
+            <div class="blog-card">
+                <div class="blog-header">
+                    <i class="fa-solid fa-file folder-icon"></i>
+                    <div class="small-icons">
+                        <a href={{blog.data.blogURL}} target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <h3>{{blog.data.title}}</h3>
+                <p>{{blog.data.description}}</p>
+                <a href="{{blog.url}}" class="cta-btn">Read more...</a>
+            </div>
+            {% endfor %}
+    </div>
+</div>
