@@ -9,7 +9,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addWatchTarget('src/blog');
     eleventyConfig.addPassthroughCopy('src/assets');
     eleventyConfig.addPassthroughCopy('src/fonts');
-    eleventyConfig.addPassthroughCopy('src/projects');
+    eleventyConfig.addPassthroughCopy('src/webapps');
+    eleventyConfig.addPassthroughCopy('src/websites');
     eleventyConfig.addFilter('head', (array, n) => {
         if(!Array.isArray(array) || array.length === 0) {
             return [];
@@ -27,8 +28,11 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addShortcode('year', () => {
         return `${new Date().getFullYear()}`;
     });
-    eleventyConfig.addCollection('projects', (collection) => {
-        return collection.getFilteredByGlob('src/projects/*.md');
+    eleventyConfig.addCollection('websites', (collection) => {
+        return collection.getFilteredByGlob('src/websites/*.md');
+    });
+    eleventyConfig.addCollection('webapps', (collection) => {
+        return collection.getFilteredByGlob('src/webapps/*.md');
     });
     eleventyConfig.addCollection('blog', (collection) => {
         return collection.getFilteredByGlob('src/blog/*.md');

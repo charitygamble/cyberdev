@@ -9,6 +9,13 @@
                 Link <i class="fa-solid fa-link"></i>
             </div>
         </a>
+        {% if githubURL %}
+        <a href="{{githubURL}}" class="cta-btn pt-btn">
+            <div class="small-icons">
+                GitHub <i class="fa-brands fa-github"></i>
+            </div>
+        </a>
+        {% endif %}
         {{ content | safe }}
     </div>
 {% endblock %}
