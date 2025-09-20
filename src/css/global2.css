@@ -635,13 +635,15 @@ hr {
 /* --------- Social Sharing Links ---------- */
 .social-sharing {
     font-size: 1.5rem !important;
-    gap: 0 1rem;
+    gap: 0 1.5rem;
 }
 
-.social-sharing a {
+.social-sharing > a {
+    font-size: 1.5rem;
     color: light-dark(var(--sky-blue), var(--dm-cyan));
 }
 
-.social-sharing a:hover {
+.social-sharing > a:hover {
+    font-size: 1.5rem;
     color: light-dark(var(--dark-blue), var(--dm-pink));
 }
