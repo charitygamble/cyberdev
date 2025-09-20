@@ -637,3 +637,11 @@ hr {
     font-size: 1.5rem;
     gap: 0 1rem;
 }
+
+.social-sharing a {
+    color: light-dark(var(--sky-blue), var(--dm-cyan));
+}
+
+.social-sharing a:hover {
+    color: light-dark(var(--dark-blue), var(--dm-pink));
+}
