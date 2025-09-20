@@ -3,6 +3,7 @@ const pluginDate = require('eleventy-plugin-date');
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(pluginDate);
+    eleventyConfig.addGlobalData('site', { rootURL:'https://charitygamble.dev' });
     eleventyConfig.addPassthroughCopy('src/css');
     eleventyConfig.addWatchTarget('src/css');
     eleventyConfig.addPassthroughCopy('src/blog');
@@ -39,8 +40,10 @@ module.exports = function(eleventyConfig) {
     });
 
     return {
+        markdownTemplateEngine: 'njk',
         dir: {
-            input: 'src'
+            input: 'src',
+            output: '_site'
         },
     };
 };
