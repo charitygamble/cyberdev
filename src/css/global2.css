@@ -151,22 +151,6 @@ li {
     background-color: light-dark(var(--sky-blue), var(--dm-pink));
 }
 
-#theme-toggle {
-      background-color: light-dark(var(--turquoise), var(--dm-lavender));
-    color: light-dark(var(--dark-gray), var(--dm-slate));
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: all 0.5s ease-in-out;
-    cursor: pointer;
-    display: inline-block;
-}
-
-#theme-toggle:hover {
-    background-color: light-dark(var(--sky-blue), var(--dm-pink));
-}
-
 /* Footer */
 hr {
     border: none;
@@ -638,12 +622,18 @@ hr {
 
 .blog-card .blog h3 {
     font-family: var(--heading), serif;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 1.25rem;
+    margin-bottom: .625rem;
 }
 
 .blog-card .blog p {
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    margin-bottom: .625rem;
     color: light-dark(var(--off-white), var(--dm-gray));
+}
+
+/* --------- Social Sharing Links ---------- */
+.social-sharing {
+    font-size: 1.5rem;
+    gap: 0 1rem;
 }
